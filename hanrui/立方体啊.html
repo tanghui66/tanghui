@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div{
+        /*position:relative;*/
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+
+
+    }
+    .box{
+        /*background-color: #FF9966;*/
+
+        margin: 200px auto;
+        transform: rotateX(20deg) rotateY(20deg);
+        animation: rotate 3s  infinite linear ;
+
+
+    }
+    .box div{
+        position:absolute;
+
+        opacity: 0.8;
+        transition: all 1s linear;
+    }
+    span{
+        position:absolute;
+        left: 70px;
+        top: 70px;
+        display: block;
+        width: 140px;
+        height: 140px;
+    }
+    .xtop{
+        position:absolute;
+        background-color: #fffd7a;
+        transform: rotateX(90deg) translateZ(70px);
+
+    }
+    .xbottom{
+        position:absolute;
+        background-color: #6f72ff;
+        transform: rotateX(-90deg) translateZ(70px);
+    }
+    .xleft{
+        position:absolute;
+        background-color: #ff3959;
+        transform: rotateY(-90deg) translateZ(70px);
+    }
+    .xright{
+        position:absolute;
+        background-color: #38ff45;
+        transform: rotateY(90deg) translateZ(70px);
+    }
+    .xfont{
+        position:absolute;
+        background-color: #fe3cff;
+        transform:  translateZ(70px);
+    }
+    .xrear{
+        position:absolute;
+        background-color: #9b45aa;
+        transform: rotateY(180deg) translateZ(70px);
+    }
+
+
+
+
+
+
+    .box:hover  .top{
+
+        transform: rotateX(90deg) translateZ(300px);
+
+    }
+    .box:hover .bottom{
+
+        transform: rotateX(-90deg) translateZ(300px);
+    }
+    .box:hover .left{
+
+        transform: rotateY(-90deg) translateZ(300px);
+    }
+    .box:hover .right{
+
+        transform: rotateY(90deg) translateZ(300px);
+    }
+    .box:hover .font{
+
+        transform:  translateZ(300px);
+    }
+    .box:hover .rear{
+
+        transform: rotateY(180deg) translateZ(300px);
+    }
+    .top{
+        background-color: #fffd7a;
+        transform: rotateX(90deg) translateZ(150px);
+
+    }
+    .bottom{
+        background-color: #6f72ff;
+        transform: rotateX(-90deg) translateZ(150px);
+    }
+    .left{
+        background-color: #ff3959;
+        transform: rotateY(-90deg) translateZ(150px);
+    }
+    .right{
+        background-color: #38ff45;
+        transform: rotateY(90deg) translateZ(150px);
+    }
+    .font{
+        background-color: #fe3cff;
+        transform:  translateZ(150px);
+    }
+    .rear{
+        background-color: #9b45aa;
+        transform: rotateY(180deg) translateZ(150px);
+    }
+    @keyframes rotate {
+        0%{
+        transform: rotateX(20deg) rotateY(20deg);
+        }
+        100%{
+            transform: rotateX(380deg) rotateY(380deg);
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+</style>
+<body>
+<div class="box">
+    <div class="top"><img src="8AC9A86BA277D8EC40DE0DD1AD6C7DAD.jpg" alt=""></div>
+    <div class="bottom"><img src="31FE99FD152450A7BA7DED5B67939B28.jpg" alt=""></div>
+    <div class="left"><img src="78C32A78D574F5A940E67303C5AB4569.jpg" alt=""></div>
+    <div class="right"><img src="961D7EA00D9CA7772A10CB59D7A0CAAB.jpg" alt=""></div>
+    <div class="font"><img src="13222D0871B09C5DF94CA5CEB097A261.jpg" alt=""></div>
+    <div class="rear"><img src="377987D8B26666E62B13CE1299A3FD3A.jpg" alt=""></div>
+    <span class="xtop"><img src="B00C4ABEEC9A488516FAEC6D032A1923.jpg" alt=""></span>
+    <span class="xbottom"><img src="BBE558131F59E842F484AD35D6C831EE.jpg" alt=""></span>
+    <span class="xleft"><img src="C613E1B1EBD48E2E9C0F25B4228C3758.jpg" alt=""></span>
+    <span class="xright"><img src="C714FDF3249F0FE50C9869C39B5D6A70.jpg" alt=""></span>
+    <span class="xfont"><img src="D75D6BE27DCA294AD936145D249595F8.jpg" alt=""></span>
+    <span class="xrear"><img src="F7832C8B2F4FB0C74E2F2AC1AC80B089.jpg" alt=""></span>
+</div>
+
+</body>
+</html>
